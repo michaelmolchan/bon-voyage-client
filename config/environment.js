@@ -7,6 +7,7 @@ module.exports = function (environment) {
     environment: environment,
     rootURL: '/',
     locationType: 'auto',
+    apiHost: 'http://localhost:4741',
     EmberENV: {
       FEATURES: {
         // Here you can enable experimental features on an ember canary build
@@ -45,9 +46,9 @@ module.exports = function (environment) {
   }
 
   if (environment === 'production') {
-    ENV.rootURL = '/<name-of-git-repo>'
+    ENV.rootURL = '/travel-journal-client'
     ENV.locationType = 'hash'
-    ENV.apiHost = '<deployed api url>'
+    ENV.apiHost = 'https://boiling-eyrie-73324.herokuapp.com'
   }
 
   return ENV
