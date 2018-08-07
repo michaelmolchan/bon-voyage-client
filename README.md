@@ -1,6 +1,20 @@
 # Capstone Project: Travel Journal
 
-A full-stack application that keeps track of your traveling experiences. With <APP NAME> you can document the the places in the world that you have traveled to, keeping track of your dining experienes, the places you've stayed at (hotels/AirBnbs), social events, and anything else related to your overall experience visiting the area.
+A full-stack application that keeps track of your traveling experiences. With <APP NAME> you can document the places in the world that you have traveled to, keeping track of your dining experiences, the places you've stayed (hotels/AirBnbs), events/activities, and anything else related to your overall experience visiting the area.
+
+# TECHNOLOGIES USED:
+- Ember.js
+- Handlebars.js
+- CSS / SASS
+- JavaScript
+- Git
+
+# LINKS:
+
+- [Back-End Repo](https://github.com/michaelmolchan/travel-journal-api)
+- [Deployed Site](https://michaelmolchan.github.io/travel-journal-client/)
+- [Deployed API](https://boiling-eyrie-73324.herokuapp.com/)
+- [WIREFRAME](https://i.imgur.com/7zQm245.png)
 
 # USER STORIES:
 
