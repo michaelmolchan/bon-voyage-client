@@ -6,9 +6,12 @@
   {{#navbar.content}}
     {{#navbar.nav class='navbar-right' as |nav|}}
       {{#if isAuthenticated}}
+        {{!-- <button class="btn btn-success navbar-btn">Add Destination</button> --}}
+        <a href="#" {{action "signOut"}}><button class="btn btn-danger navbar-btn"><span class="glyphicon glyphicon-log-out"></span> Sign Out</button></a>
+        {{#nav.item}}{{#nav.link-to "destinations"}}<span class="glyphicon glyphicon-plus"></span> Add Destination{{/nav.link-to}}{{/nav.item}}
         {{#nav.item}}{{#nav.link-to "destinations"}}My Destinations{{/nav.link-to}}{{/nav.item}}
         {{#nav.item}}{{#nav.link-to "change-password"}}Change Password{{/nav.link-to}}{{/nav.item}}
-        {{#nav.item}}<a href="#" {{action "signOut"}}>Sign Out</a>{{/nav.item}}
+        {{!-- {{#nav.item}}<a href="#" {{action "signOut"}}>Sign Out</a>{{/nav.item}} --}}
       {{else}}
         {{#nav.item}}{{#nav.link-to "sign-up"}}Sign Up{{/nav.link-to}}{{/nav.item}}
         {{#nav.item}}{{#nav.link-to "sign-in"}}Sign In{{/nav.link-to}}{{/nav.item}}
@@ -17,10 +20,11 @@
   {{/navbar.content}}
 {{/bs-navbar}}
 
-{{#each flashMessages.queue as |flash|}}
-  {{flash-message flash=flash}}
-{{/each}}
+<div class="col-md-8 col-md-offset-2 content">
 
-<div class="col-md-8 col-md-offset-2">
+  {{#each flashMessages.queue as |flash|}}
+    {{flash-message flash=flash}}
+  {{/each}}
+
   {{outlet}}
 </div>

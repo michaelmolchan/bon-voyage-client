@@ -3,22 +3,84 @@
 @import url('https://fonts.googleapis.com/css?family=Pattaya');
 
 body {
-  background: #bad3dc;
+  background: #dbd9d8;
   font-family: 'Pragati Narrow', sans-serif;
+  background-image: url('https://i.imgur.com/5028srA.jpg');
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 .brand-custom {
   font-size: 35px;
   font-family: 'Pattaya', sans-serif;
-  color: #0594c9;
+  color: #60c0dc;
   transition: 0.5s;
 }
 
 .brand-custom:hover {
-  color: #03b9fd;
+  color: #0594c9;
   text-decoration: none;
 }
 
 .navbar {
   color: black;
+}
+
+.auth {
+  padding: 25px;
+}
+
+.content {
+  background-color: white;
+  padding: 25px;
+}
+
+.homepage-content h1 {
+  font-family: 'Pattaya', sans-serif;
+  color: #60c0dc;
+  font-size: 50px;
+}
+
+.homepage-content h3 {
+  text-align: justify;
+  font-size: 25px;
+  padding-bottom: 15px;
+}
+
+@media only screen and (max-width: 600px) {
+  .homepage-content h1 {
+    font-size: 32px;
+  }
+}
+
+// .my-destinations {
+//   // text-align: center;
+//   padding: 25px;
+// }
+
+.my-destinations h1 {
+  font-size: 55px;
+  font-family: 'Pattaya', sans-serif;
+  color: #60c0dc;
+  text-align: center;
+}
+
+.my-destinations ul {
+  font-size: 42px;
+  text-align: center;
+  font-family: 'Pattaya', sans-serif;
+  color: #0594c9;
+  // list-style-image: url('https://i.imgur.com/eU9S1Oq.png');
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.my-destinations a {
+  transition: 0.5s;
+}
+
+.my-destinations a:hover {
+  color: #0594c9;
+  text-decoration: none;
 }

@@ -1,7 +1,9 @@
-{{#if isAuthenticated}}
-  <h1 style="margin-top:15px;">Hello {{user}}! {{#link-to 'destinations'}}Check out your destinations!{{/link-to}}</h1>
-{{else}}
-  <h1>Welcome to Bon Voyage!</h1>
-  <h3>Sign in to start documenting the places in the world that you have traveled to! Bon Voyage! helps you keep track of your dining experiences, the places you've stayed (hotels/AirBnbs), events/activities, and anything else related to your overall experience visiting the area.</h3>
-  <p>{{#link-to 'sign-up'}}<button class="btn btn-info">Sign up</button>{{/link-to}} {{#link-to 'sign-in'}}<button class="btn btn-info">Sign in</button>{{/link-to}}</p>
-{{/if}}
+<div class="homepage-content">
+  {{#if isAuthenticated}}
+    <h2 style="margin-top:15px;">Hello {{user}}! {{#link-to 'destinations'}}Check out your destinations!{{/link-to}}</h2>
+  {{else}}
+    <h1>Welcome to Bon Voyage!</h1>
+    <h3>Sign in to start documenting the places in the world that you have traveled to! Bon Voyage! helps you keep track of your dining experiences, the places you've stayed (hotels/AirBnbs), events/activities, and anything else related to your overall experience visiting the area.</h3>
+    <p>{{#link-to 'sign-up'}}<button class="btn btn-info">Sign up</button>{{/link-to}} {{#link-to 'sign-in'}}<button class="btn btn-info">Sign in</button>{{/link-to}}</p>
+  {{/if}}
+</div>
