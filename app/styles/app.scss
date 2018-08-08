@@ -1,1 +1,24 @@
 @import "ember-bootstrap/bootstrap";
+@import url('https://fonts.googleapis.com/css?family=Pragati+Narrow:400,400i,700,700i');
+@import url('https://fonts.googleapis.com/css?family=Pattaya');
+
+body {
+  background: #bad3dc;
+  font-family: 'Pragati Narrow', sans-serif;
+}
+
+.brand-custom {
+  font-size: 35px;
+  font-family: 'Pattaya', sans-serif;
+  color: #0594c9;
+  transition: 0.5s;
+}
+
+.brand-custom:hover {
+  color: #03b9fd;
+  text-decoration: none;
+}
+
+.navbar {
+  color: black;
+}

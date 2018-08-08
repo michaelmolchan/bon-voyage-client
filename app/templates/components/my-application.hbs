@@ -1,11 +1,12 @@
 {{#bs-navbar type=(if inverse 'inverse') fluid=fluid collapsed=collapsed onCollapse=(action (mut collapsed) true) onExpand=(action (mut collapsed) false) as |navbar|}}
   <div class="navbar-header">
     {{navbar.toggle}}
-    {{#link-to "application" class="navbar-brand"}}Home{{/link-to}}
+    {{#link-to "application" class="brand-custom"}}Bon Voyage!{{/link-to}}
   </div>
   {{#navbar.content}}
     {{#navbar.nav class='navbar-right' as |nav|}}
       {{#if isAuthenticated}}
+        {{#nav.item}}{{#nav.link-to "destinations"}}My Destinations{{/nav.link-to}}{{/nav.item}}
         {{#nav.item}}{{#nav.link-to "change-password"}}Change Password{{/nav.link-to}}{{/nav.item}}
         {{#nav.item}}<a href="#" {{action "signOut"}}>Sign Out</a>{{/nav.item}}
       {{else}}
@@ -15,8 +16,6 @@
     {{/navbar.nav}}
   {{/navbar.content}}
 {{/bs-navbar}}
-
-<h1>Welcome to Ember!</h1>
 
 {{#each flashMessages.queue as |flash|}}
   {{flash-message flash=flash}}
