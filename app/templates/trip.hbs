@@ -1,0 +1,13 @@
+<div>
+  <h3 {{action 'toggleDetail'}}>Title: {{list.title}}</h3>
+
+  {{#if list.isEmpty}}
+    <button>Delete List</button>
+  {{else}}
+    <ol>
+      {{#each list.items as |item|}}
+        {{shopping-list/item item=item crossOff='crossOff' deleteItem='deleteItem' updateItem='updateItem'}}
+      {{/each}}
+    </ol>
+  {{/if}}
+</div>

@@ -1,4 +1,4 @@
-{{#bs-navbar type=(if inverse 'inverse') fluid=fluid collapsed=collapsed onCollapse=(action (mut collapsed) true) onExpand=(action (mut collapsed) false) as |navbar|}}
+{{#bs-navbar class="nav" type=(if inverse 'inverse') fluid=fluid collapsed=collapsed onCollapse=(action (mut collapsed) true) onExpand=(action (mut collapsed) false) as |navbar|}}
   <div class="navbar-header">
     {{navbar.toggle}}
     {{#link-to "application" class="brand-custom"}}Bon Voyage!{{/link-to}}
@@ -6,10 +6,10 @@
   {{#navbar.content}}
     {{#navbar.nav class='navbar-right' as |nav|}}
       {{#if isAuthenticated}}
-        {{!-- <button class="btn btn-success navbar-btn">Add Destination</button> --}}
+        {{!-- <button class="btn btn-success navbar-btn">Add trip</button> --}}
         <a href="#" {{action "signOut"}}><button class="btn btn-danger navbar-btn"><span class="glyphicon glyphicon-log-out"></span> Sign Out</button></a>
-        {{#nav.item}}{{#nav.link-to "destinations"}}<span class="glyphicon glyphicon-plus"></span> Add Destination{{/nav.link-to}}{{/nav.item}}
-        {{#nav.item}}{{#nav.link-to "destinations"}}My Destinations{{/nav.link-to}}{{/nav.item}}
+        {{#nav.item}}{{#nav.link-to "trips"}}<span class="glyphicon glyphicon-plus"></span> Add Trip{{/nav.link-to}}{{/nav.item}}
+        {{#nav.item}}{{#nav.link-to "trips"}}My Trips{{/nav.link-to}}{{/nav.item}}
         {{#nav.item}}{{#nav.link-to "change-password"}}Change Password{{/nav.link-to}}{{/nav.item}}
         {{!-- {{#nav.item}}<a href="#" {{action "signOut"}}>Sign Out</a>{{/nav.item}} --}}
       {{else}}

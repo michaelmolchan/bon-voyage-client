@@ -1,0 +1,25 @@
+<h2>Enter Your Trip Information:</h2>
+<form {{action 'addTrip' on="submit"}}>
+  <div class="form-group">
+    {{!-- <label for="email">City:</label> --}}
+    <{{input placeholder="City" value=trip.city}}
+  </div>
+  <div class="form-group">
+    {{!-- <label for="pwd">State:</label> --}}
+    {{input placeholder="State" value=trip.state}}
+  </div>
+  <div class="form-group">
+    {{!-- <label for="pwd">Country:</label> --}}
+    {{input placeholder="Country" value=trip.country}}
+  </div>
+  <button class='btn btn-success' type="submit">Add Trip</button>
+  {{!-- {{#if editForm}}
+    <button {{action 'cancel'}} class='btn-xs btn-danger'>Cancel</button>
+  {{/if}} --}}
+</form>
+
+<ol>
+  {{#each trips.trip as |trip|}}
+    {{trips/trip trip=trip}}
+  {{/each}}
+</ol>

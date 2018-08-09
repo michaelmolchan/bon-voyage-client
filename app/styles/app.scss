@@ -10,6 +10,12 @@ body {
   background-attachment: fixed;
 }
 
+// .nav {
+//   background-color: black;
+//   border: none;
+//   width: 100%;
+// }
+
 .brand-custom {
   font-size: 35px;
   font-family: 'Pattaya', sans-serif;
@@ -41,6 +47,22 @@ body {
   font-size: 50px;
 }
 
+.homepage-content h2 {
+  color: #60c0dc;
+  font-size: 40px;
+  text-align: center;
+}
+
+.homepage-content h2 a {
+  transition: 0.5s;
+  color: #25537a;
+}
+
+.homepage-content h2 a:hover {
+  color: #02ce37;
+  text-decoration: none;
+}
+
 .homepage-content h3 {
   text-align: justify;
   font-size: 25px;
@@ -53,34 +75,35 @@ body {
   }
 }
 
-// .my-destinations {
+// .my-trips {
 //   // text-align: center;
 //   padding: 25px;
 // }
 
-.my-destinations h1 {
+.my-trips h1 {
   font-size: 55px;
   font-family: 'Pattaya', sans-serif;
   color: #60c0dc;
   text-align: center;
 }
 
-.my-destinations ul {
+.my-trips ul {
   font-size: 42px;
   text-align: center;
   font-family: 'Pattaya', sans-serif;
-  color: #0594c9;
+  // color: white;
   // list-style-image: url('https://i.imgur.com/eU9S1Oq.png');
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
 
-.my-destinations a {
+.my-trips a {
   transition: 0.5s;
+  color: #25537a;
 }
 
-.my-destinations a:hover {
-  color: #0594c9;
+.my-trips a:hover {
+  color: #02ce37;
   text-decoration: none;
 }
