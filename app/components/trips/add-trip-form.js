@@ -1,10 +1,11 @@
 import Component from '@ember/component'
 
 export default Component.extend({
+  trip: {},
   actions: {
-    addtrip: function () {
+    addTrip: function () {
       console.log('add trip called on add-trip-form.js')
-      this.sendAction('addtrip', this.get('trips'))
+      this.sendAction('addTrip', this.get('trip'))
     }
   }
 })

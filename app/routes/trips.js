@@ -5,8 +5,12 @@ export default Route.extend({
     return this.get('store').findAll('trip')
   },
   actions: {
-    goToList (trip) {
+    goToTrip (trip) {
       this.transitionTo('trip', trip.id)
+    },
+    addTrip: function (trip) {
+      console.log(trip)
+      this.get('store').createRecord('trip', trip).save()
     }
   }
 })
