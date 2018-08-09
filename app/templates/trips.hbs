@@ -7,7 +7,7 @@
 
   <ul>
     {{#each model as |trip|}}
-      <li {{action 'goToList' list}}><a href="#">{{trip.city}}, {{trip.state}}, {{trip.country}}</a></li>
+      <li><a href="#">{{trip.city}}, {{trip.state}}, {{trip.country}}</a><button class="delete-btn" class="btn btn-default" {{action "deleteTrip" trip}}>Delete</button></li>
     {{/each}}
   </ul>
 
