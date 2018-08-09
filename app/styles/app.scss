@@ -107,3 +107,17 @@ body {
   color: #02ce37;
   text-decoration: none;
 }
+
+.delete-btn {
+  font-family: 'Pragati Narrow', sans-serif;
+  color: #25537a;
+  margin-left: 15px;
+  margin-bottom: 5px;
+  transition: 0.5s;
+}
+
+.delete-btn:hover {
+  color: black;
+  background-color: #fd8c8c;
+  text-decoration: none;
+}

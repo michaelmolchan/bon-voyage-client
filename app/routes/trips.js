@@ -11,6 +11,11 @@ export default Route.extend({
     addTrip: function (trip) {
       console.log(trip)
       this.get('store').createRecord('trip', trip).save()
+    },
+    deleteTrip: function (trip) {
+      console.log('trip is ', trip)
+      trip.destroyRecord()
+      // this.get('store').createRecord('trip', trip).save()
     }
   }
 })
