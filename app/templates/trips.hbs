@@ -1,0 +1,15 @@
+<div class="my-trips">
+
+  {{!-- {{#link-to 'trips/add-trip-form'}}<button type="button" class="btn btn-success btn-lg" data-toggle="modal" data-target="#myModal">Add Trip</button>{{/link-to}} --}}
+  {{trips/add-trip-form}}
+
+  <h1>Your Trips</h1>
+
+  <ul>
+    {{#each model as |trip|}}
+      <li {{action 'goToList' list}}><a href="#">{{trip.city}}, {{trip.state}}, {{trip.country}}</a></li>
+    {{/each}}
+  </ul>
+  {{!-- <h4>Create Item:</h4>
+  {{shopping-list/item/form item=newItem updateItem='updateItem'}} --}}
+</div>

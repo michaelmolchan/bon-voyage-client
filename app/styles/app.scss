@@ -1,1 +1,109 @@
 @import "ember-bootstrap/bootstrap";
+@import url('https://fonts.googleapis.com/css?family=Pragati+Narrow:400,400i,700,700i');
+@import url('https://fonts.googleapis.com/css?family=Pattaya');
+
+body {
+  background: #dbd9d8;
+  font-family: 'Pragati Narrow', sans-serif;
+  background-image: url('https://i.imgur.com/5028srA.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+// .nav {
+//   background-color: black;
+//   border: none;
+//   width: 100%;
+// }
+
+.brand-custom {
+  font-size: 35px;
+  font-family: 'Pattaya', sans-serif;
+  color: #60c0dc;
+  transition: 0.5s;
+}
+
+.brand-custom:hover {
+  color: #0594c9;
+  text-decoration: none;
+}
+
+.navbar {
+  color: black;
+}
+
+.auth {
+  padding: 25px;
+}
+
+.content {
+  background-color: white;
+  padding: 25px;
+}
+
+.homepage-content h1 {
+  font-family: 'Pattaya', sans-serif;
+  color: #60c0dc;
+  font-size: 50px;
+}
+
+.homepage-content h2 {
+  color: #60c0dc;
+  font-size: 40px;
+  text-align: center;
+}
+
+.homepage-content h2 a {
+  transition: 0.5s;
+  color: #25537a;
+}
+
+.homepage-content h2 a:hover {
+  color: #02ce37;
+  text-decoration: none;
+}
+
+.homepage-content h3 {
+  text-align: justify;
+  font-size: 25px;
+  padding-bottom: 15px;
+}
+
+@media only screen and (max-width: 600px) {
+  .homepage-content h1 {
+    font-size: 32px;
+  }
+}
+
+// .my-trips {
+//   // text-align: center;
+//   padding: 25px;
+// }
+
+.my-trips h1 {
+  font-size: 55px;
+  font-family: 'Pattaya', sans-serif;
+  color: #60c0dc;
+  text-align: center;
+}
+
+.my-trips ul {
+  font-size: 42px;
+  text-align: center;
+  font-family: 'Pattaya', sans-serif;
+  // color: white;
+  // list-style-image: url('https://i.imgur.com/eU9S1Oq.png');
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.my-trips a {
+  transition: 0.5s;
+  color: #25537a;
+}
+
+.my-trips a:hover {
+  color: #02ce37;
+  text-decoration: none;
+}

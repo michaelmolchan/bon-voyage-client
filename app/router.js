@@ -10,6 +10,8 @@ Router.map(function () {
   this.route('sign-up')
   this.route('sign-in')
   this.route('change-password')
+  this.route('trips')
+  this.route('trip', { path: '/trips/:trip_id' })
 })
 
 export default Router
