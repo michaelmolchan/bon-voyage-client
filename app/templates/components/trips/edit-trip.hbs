@@ -1,6 +1,8 @@
 {{#if editing}}
-  <li>{{trip.city}}, {{trip.state}}, {{trip.country}}<button class="btn btn-default delete-btn" {{action "deleteTrip" trip}}>Delete</button><button class="btn btn-default update-btn" {{ action 'toggleEditing' }}>Cancel</button></li>
-  <form class="form-inline update-form" {{action 'updateTrip' on="submit"}}>
+
+  {{!-- {{trips/edit-trip/form updateTrip='updateTrip'}} --}}
+
+  <form class="form-inline update-form" {{action 'updateTrip' trip on="submit"}}>
     <div class="form-group">
       {{input type="text" placeholder="City" value=trip.city required=true}}
     </div>
@@ -10,10 +12,11 @@
     <div class="form-group">
       {{input type="text" placeholder="Country" value=trip.country required=true}}
     </div>
-    <button class="btn-green" class="btn btn-success" type="submit">Update Trip</button>
+    <button class="btn btn-success btn-green" type="submit">Update Trip</button><button class="btn btn-default btn-cancel" {{ action 'toggleEditing' }}>Cancel</button>
   </form>
+
 {{else}}
-  <li>{{trip.city}}, {{trip.state}}, {{trip.country}}<button class="delete-btn" class="btn btn-default" {{action "deleteTrip" trip}}>Delete</button><button class="btn btn-default update-btn" {{ action 'toggleEditing' }}>Update</button></li>
+  <li>{{trip.city}}, {{trip.state}}, {{trip.country}}<button class="btn btn-default delete-btn" {{action "deleteTrip" trip}}>Delete</button><button class="btn btn-default update-btn" {{ action 'toggleEditing' }}>Update</button></li>
 {{/if}}
 
 {{!-- {{#if editing}}
