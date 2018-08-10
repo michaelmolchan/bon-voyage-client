@@ -1,13 +1,45 @@
 
 <div class="my-trips">
 
-  {{trips/add-trip-form addTrip='addTrip'}}
+  <center>{{trips/add-trip-form addTrip='addTrip' reset="reset"}}</center>
 
   <h1>Your Trips</h1>
 
   <ul>
     {{#each model as |trip|}}
-      <li><a href="#">{{trip.city}}, {{trip.state}}, {{trip.country}}</a><button class="delete-btn" class="btn btn-default" {{action "deleteTrip" trip}}>Delete</button></li>
+
+      {{trips/edit-trip trip=trip deleteTrip='deleteTrip' updateTrip='updateTrip'}}
+
+      {{!-- {{#if editing}}
+
+      {{trips/edit-trip}}
+
+      {{else}}
+
+      <li><a href="#">{{trip.city}}, {{trip.state}}, {{trip.country}}</a><button class="delete-btn" class="btn btn-default" {{action "deleteTrip" trip}}>Delete</button><button class="btn btn-default update-btn" {{ action 'toggleEditing' }}>Updates</button></li>
+
+      {{/if}} --}}
+
+
+    {{!-- {{trips/edit-trip updateTrip='updateTrip' deleteTrip='deleteTrip' reset="reset"}} --}}
+
+    {{!-- {{#if editing}}
+      <li>{{trip.city}}, {{trip.state}}, {{trip.country}}<button class="btn btn-default delete-btn" {{action "deleteTrip" trip}}>Delete</button><button class="btn btn-default update-btn" {{ action 'toggleEditing' }}>Cancel</button></li>
+      <form class="form-inline update-form" {{action 'updateTrip' on="submit"}}>
+        <div class="form-group">
+          {{input type="text" placeholder="City" value=trip.city required=true}}
+        </div>
+        <div class="form-group">
+          {{input type="text" placeholder="State" value=trip.state required=true}}
+        </div>
+        <div class="form-group">
+          {{input type="text" placeholder="Country" value=trip.country required=true}}
+        </div>
+        <button class="update-btn" class="btn btn-success" type="submit">Update Trip</button>
+      </form>
+    {{else}}
+      <li>{{trip.city}}, {{trip.state}}, {{trip.country}}<button class="btn btn-default delete-btn" {{action "deleteTrip" trip}}>Delete</button><button class="btn btn-default update-btn" {{ action 'toggleEditing' }}>Update</button></li>
+    {{/if}} --}}
     {{/each}}
   </ul>
 
