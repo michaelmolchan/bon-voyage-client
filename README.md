@@ -40,10 +40,9 @@ NICE TO HAVES:
 - User should be able to search/access their travel notes through a search bar. A successful location search would display the all notes related to that location.
 - User should be able view other user's travel notes.
 
-# Installation:
+# Intallation Instructions:
 - Fork and clone this repository.
 - Change into the new directory.
 - Install dependencies with npm install.
-- Fork and clone [Travel Journey API](https://github.com/michaelmolchan/travel-journal-api) and follow the instructions to setup the API.
-- Start the api with ```bin/rails server```
 - Start the client with ```ember server```
+- Fork and clone [Travel Journal API](https://github.com/michaelmolchan/travel-journal-api) and follow the instructions to setup the API.

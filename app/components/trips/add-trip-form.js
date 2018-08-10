@@ -10,9 +10,9 @@ export default Component.extend({
       this.toggleProperty('editing')
       this.set('trip', {})
     },
-    showAddList () {
-      this.toggleProperty('addingNew')
-    },
+    // showAddList () {
+    //   this.toggleProperty('addingNew')
+    // },
     reset () {
       this.set('trip', {})
       this.toggleProperty('editing')

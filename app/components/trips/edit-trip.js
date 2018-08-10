@@ -1,11 +1,10 @@
 import Component from '@ember/component'
 
 export default Component.extend({
-  trip: {},
   editing: false,
   actions: {
-    updateTrip: function (trip) {
-      console.log('updateTrip called on edit-trip.js', trip)
+    updateTrip: function () {
+      console.log('updateTrip called on edit-trip.js', this.get('trip'))
       this.sendAction('updateTrip', this.get('trip'))
       // this.set('trip', {})
       this.toggleProperty('editing')

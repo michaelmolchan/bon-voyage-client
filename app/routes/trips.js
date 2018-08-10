@@ -18,7 +18,7 @@ export default Route.extend({
     },
     updateTrip: function (trip) {
       console.log('trip is ', trip)
-      // this.set('trip', trip)
+      this.set('trip', trip).save()
     },
     toggleEditing (trip) {
       console.log('editing:', this.get('editing'))
