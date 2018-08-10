@@ -1,4 +1,4 @@
-{{!-- {{#if addingTrip}} --}}
+{{#if editing}}
   <h2>Enter Your Trip Information:</h2>
   <form {{action 'addTrip' on="submit"}}>
     <div class="form-group">
@@ -19,6 +19,6 @@
       <button {{action 'cancel'}} class='btn-xs btn-danger'>Cancel</button>
     {{/if}} --}}
   </form>
-{{!-- {{else}}
-  <button type="button" class="btn btn-success btn-lg"><span class="glyphicon glyphicon-plus"></span> Add Trip</button>
-{{/if}} --}}
+{{else}}
+  <button {{action 'toggleEditing'}} type="button" class="btn btn-success btn-lg btn-green"><span class="glyphicon glyphicon-plus"></span> Add A Trip</button>
+{{/if}}

@@ -10,12 +10,6 @@ body {
   background-attachment: fixed;
 }
 
-// .nav {
-//   background-color: black;
-//   border: none;
-//   width: 100%;
-// }
-
 .brand-custom {
   font-size: 35px;
   font-family: 'Pattaya', sans-serif;
@@ -38,7 +32,8 @@ body {
 
 .content {
   background-color: white;
-  padding: 25px;
+  padding: 25px 75px;
+  margin-bottom: 25px;
 }
 
 .homepage-content h1 {
@@ -81,7 +76,7 @@ body {
 // }
 
 .my-trips h1 {
-  font-size: 55px;
+  font-size: 65px;
   font-family: 'Pattaya', sans-serif;
   color: #60c0dc;
   text-align: center;
@@ -110,14 +105,60 @@ body {
 
 .delete-btn {
   font-family: 'Pragati Narrow', sans-serif;
-  color: #25537a;
+  background-color: #d75452;
+  border-color: #d75452;
+  color: white;
   margin-left: 15px;
   margin-bottom: 5px;
   transition: 0.5s;
 }
 
 .delete-btn:hover {
-  color: black;
-  background-color: #fd8c8c;
+  color: white;
+  background-color: #c73232;
+  border-color: #c73232;
   text-decoration: none;
 }
+
+.update-form {
+  font-family: 'Pragati Narrow', sans-serif;
+  color: #25537a;
+  transition: 0.5s;
+}
+
+.update-btn {
+  font-family: 'Pragati Narrow', sans-serif;
+  background-color: #64c0da;
+  border-color: #64c0da;
+  color: white;
+  margin-left: 15px;
+  margin-bottom: 5px;
+  transition: 0.5s;
+}
+
+.update-btn:hover {
+  background-color: #0594c9;
+  border-color: #0594c9;
+  color: white;
+  text-decoration: none;
+}
+
+.btn-green {
+  font-family: 'Pragati Narrow', sans-serif;
+  background-color: #5fb760;
+  border-color: #5fb760;
+  color: white;
+  margin-top: 5px;
+  transition: 0.5s;
+}
+
+.btn-green:hover {
+  background-color: #489c48;
+  border-color: #489c48;
+  color: white;
+  text-decoration: none;
+}
+
+// .add-trip-btn {
+//   margin: 0 auto;
+// }

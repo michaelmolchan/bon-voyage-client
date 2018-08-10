@@ -4,14 +4,15 @@ export default Component.extend({
   trip: {},
   editing: false,
   actions: {
-    addTrip: function (trip) {
-      console.log('add trip called on add-trip-form.js', trip)
-      this.sendAction('addTrip', this.get('trip'))
+    updateTrip: function (trip) {
+      console.log('updateTrip called on edit-trip.js', trip)
+      this.sendAction('updateTrip', this.get('trip'))
+      // this.set('trip', {})
       this.toggleProperty('editing')
-      this.set('trip', {})
     },
-    showAddList () {
-      this.toggleProperty('addingNew')
+    deleteTrip: function () {
+      console.log('add trip called on add-trip-form.js')
+      this.sendAction('deleteTrip', this.get('trip'))
     },
     reset () {
       this.set('trip', {})
