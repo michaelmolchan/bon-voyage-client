@@ -1,6 +1,6 @@
 import Application from '@ember/application'
 import { run } from '@ember/runloop'
-import TextFieldInitializer from 'travel-journal-client/initializers/text-field'
+import TextFieldInitializer from 'bon-voyage-client/initializers/text-field'
 import { module, test } from 'qunit'
 
 let application

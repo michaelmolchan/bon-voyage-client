@@ -3,7 +3,7 @@
 module.exports = function (environment) {
   'use strict'
   const ENV = {
-    modulePrefix: 'travel-journal-client',
+    modulePrefix: 'bon-voyage-client',
     environment: environment,
     rootURL: '/',
     locationType: 'auto',
@@ -46,7 +46,7 @@ module.exports = function (environment) {
   }
 
   if (environment === 'production') {
-    ENV.rootURL = '/travel-journal-client'
+    ENV.rootURL = '/bon-voyage-client'
     ENV.locationType = 'hash'
     ENV.apiHost = 'https://boiling-eyrie-73324.herokuapp.com'
   }

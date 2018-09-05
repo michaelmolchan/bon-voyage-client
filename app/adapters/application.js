@@ -1,4 +1,4 @@
-import ENV from 'travel-journal-client/config/environment'
+import ENV from 'bon-voyage-client/config/environment'
 import ActiveModelAdapter from 'active-model-adapter'
 import { inject as service } from '@ember/service'
 import { computed } from '@ember/object'
