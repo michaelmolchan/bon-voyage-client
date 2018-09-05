@@ -13,8 +13,8 @@ A full-stack application that keeps track of your traveling experiences. With Bo
 
 # Links:
 
-- [Back-End Repo](https://github.com/michaelmolchan/travel-journal-api)
-- [Deployed Site](https://michaelmolchan.github.io/travel-journal-client/)
+- [Back-End Repo](https://github.com/michaelmolchan/bon-voyage-api)
+- [Deployed Site](https://michaelmolchan.github.io/bon-voyage-client/)
 - [Deployed API](https://boiling-eyrie-73324.herokuapp.com/)
 - [WIREFRAME](https://i.imgur.com/7zQm245.png)
 
@@ -45,4 +45,4 @@ NICE TO HAVES:
 - Change into the new directory.
 - Install dependencies with npm install.
 - Start the client with ```ember server```
-- Fork and clone [Travel Journal API](https://github.com/michaelmolchan/travel-journal-api) and follow the instructions to setup the API.
+- Fork and clone [Bon Voyage API](https://github.com/michaelmolchan/bon-voyage-api) and follow the instructions to setup the API.
