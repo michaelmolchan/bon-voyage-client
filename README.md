@@ -1,6 +1,6 @@
-# Capstone Project: Travel Journal
+# Capstone Project: Bon Voyage
 
-A full-stack application that keeps track of your traveling experiences. With <APP NAME> you can document the places in the world that you have traveled to, keeping track of your dining experiences, the places you've stayed (hotels/AirBnbs), events/activities, and anything else related to your overall experience visiting the area.
+A full-stack application that keeps track of your traveling experiences. With Bon Voyage you can document the places in the world that you have traveled to, keeping track of your dining experiences, the places you've stayed (hotels/AirBnbs), events/activities, and anything else related to your overall experience visiting the area.
 
 ![](https://i.imgur.com/N75SPrd.png)
 
